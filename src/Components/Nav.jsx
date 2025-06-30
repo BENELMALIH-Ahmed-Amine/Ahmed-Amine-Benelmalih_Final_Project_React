@@ -27,10 +27,11 @@ const Nav = () => {
         setnavvisiblety("hidden")
         setbarvisiblety("")
     }
+    
     return (
         <div className='w-full py-7 pr-12 flex justify-between items-center text-[#888888] max-sm:px-5 max-sm:gap-x-34 max-sm:relative'>
             <div className='w-[165px] h-[25px] pl-14 max-sm:p-0 max-sm:w-[110px]'><img className='w-full h-full' src={logo} alt="Fashe." /></div>
-            <nav className={`flex gap-x-5 max-sm:flex-col max-sm:absolute top-20 left-0 max-sm:bg-[#e65540] max-sm:text-white max-sm:px-5 max-sm:w-full max-sm:${navvisible}`}>
+            <nav className={`flex gap-x-7 text-[#555555] max-sm:flex-col max-sm:absolute top-20 left-0 max-sm:bg-[#e65540] max-sm:text-white max-sm:px-5 max-sm:w-full max-sm:${navvisible}`}>
                 <div className='flex items-center justify-between'>
                     <Link to={'/'} className='w-fit hover:underline max-sm:py-3'>Home </Link>
                     <CgChevronRight className='text-[13px] min-sm:hidden' />
