@@ -2,9 +2,9 @@ import React from 'react';
 
 const Caroucel = () => {
     return (
-        <header>
+        <article>
             C
-        </header>
+        </article>
     );
 };
 
