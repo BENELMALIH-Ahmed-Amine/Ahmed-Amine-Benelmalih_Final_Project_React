@@ -1,16 +1,10 @@
 import React from 'react';
-import { FaFacebookF, FaGooglePlusG, FaInstagram, FaPinterestSquare, FaTwitter } from 'react-icons/fa';
+import Sosials from './Sosials';
 
 const Header = () => {
     return (
         <header className='w-full py-3 pl-13 pr-10 bg-[#f5f5f5] flex justify-between text-[#888888]'>
-            <div className='flex gap-x-4 text-lg '>
-                <FaFacebookF className='hover:text-[#e65540]' />
-                <FaTwitter className='hover:text-[#e65540]' />
-                <FaPinterestSquare className='hover:text-[#e65540]' />
-                <FaGooglePlusG className='hover:text-[#e65540]' />
-                <FaInstagram className='hover:text-[#e65540]' />
-            </div>
+            <Sosials/>
             <p className='text-[13px] max-sm:hidden'>Free shipping for standard order over $100 </p>
             <div className='flex gap-x-3 text-[13px]'>
                 <p className='max-sm:invisible'>fashe@example.com</p>

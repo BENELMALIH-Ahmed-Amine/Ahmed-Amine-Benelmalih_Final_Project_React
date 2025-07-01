@@ -5,7 +5,7 @@ import Images from '../../Constants/Images';
 
 import Slider from "react-slick";
 
-const Caroucel = () => {
+const HeroCaroucel = () => {
 
     let sliderRef = useRef(null);
     const settings = {
@@ -17,6 +17,9 @@ const Caroucel = () => {
         autoplaySpeed: 2000
     };
     return (
+        //todo: buttons?!
+        //? why does h doesn't respend
+        
         <article className='w-[300vw] slider-container'>
             <Slider ref={slider => (sliderRef = slider)} {...settings}>
                 <section className='w-full h-full relative'>
@@ -32,7 +35,7 @@ const Caroucel = () => {
                     </div>
                 </section>
 
-                <section className='w-full h-5500px6 relative'>
+                <section className='w-full h-full relative'>
                     <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.Carousel2} alt=""/></div>
 
                     <div className="w-full h-full bg-[#00000030] grid place-content-center absolute top-0">
@@ -45,7 +48,7 @@ const Caroucel = () => {
                     </div>
                 </section>
 
-                <section className='w-full h-5500px6 relative'>
+                <section className='w-full h-full relative'>
                     <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.Carousel3} alt=""/></div>
 
                     <div className="w-full h-full bg-[#00000030] grid place-content-center absolute top-0">
@@ -57,11 +60,9 @@ const Caroucel = () => {
                         </div>
                     </div>
                 </section>
-
-
             </Slider>
         </article>
     );
 };
 
-export default Caroucel;
+export default HeroCaroucel;

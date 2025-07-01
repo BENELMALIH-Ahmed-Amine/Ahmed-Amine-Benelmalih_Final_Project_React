@@ -1,11 +1,11 @@
 import React from 'react';
-import Main from './Main';
-import Caroucel from './Caroucel';
+import Main from './Main/Main';
+import HeroCaroucel from './HeroCaroucel';
 
 const Home = () => {
     return (
         <>
-            <Caroucel/>
+            <HeroCaroucel/>
             <Main/>
         </>
     );
