@@ -1,6 +1,8 @@
 import React from 'react';
 import CaroucelMulti from './CaroucelMulti';
 import Images from '../../Constants/Images';
+import { Link } from 'react-router-dom';
+import Blogs from '../Blog/Blogs';
 
 const Main = () => {
     return (
@@ -40,15 +42,37 @@ const Main = () => {
                 </section>
             </article>
 
-            <CaroucelMulti/>
+            <CaroucelMulti />
 
             <div className='w-full h-fit py-14 bg-[#f2f2f2] flex justify-center'>
-                <article className='w-[60%] h-fit flex justify-center gap-8 max-sm:w-[80%] max-sm:block max-sm:space-y-8 bg-amber-600'>
-                    <section className='w-[48.7%] h-[425px] max-sm:w-full bg-amber-300'></section>
-                    <section className='w-[48.7%] h-[425px] max-sm:w-full bg-amber-300'></section>
+                <article className='w-[60%] h-fit flex justify-center gap-8 max-sm:w-[80%] max-sm:block max-sm:space-y-8'>
+                    <section className='w-[48.7%] h-[425px] max-sm:w-full relative'>
+                        <div className='w-full h-full'><img className='w-full h-full' src={Images.banner1} alt="" /></div>
+                        <div className='w-full h-full absolute top-0'>
+                            <div className='w-full h-full Btext-white text-center grid place-content-center'>
+                                <h3 className='text-3xl font-bold w-72 my-10'>The Beauty <span className='text-6xl'>Lookbook</span></h3>
+                                <a className='text-xl hover:underline' href="#">View Collection</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section className='w-[48.7%] h-[425px] flex justify-center text-[#737373] max-sm:w-full relative'>
+                        <div className='w-full h-full'><img className='w-full h-full' src={Images.banner2} alt="" /></div>
+                        <div className='text-center absolute bottom-0'>
+                            <a className='w-full text-lg hover:text-[#e65540] transition-colors duration-300' href="#">Boxy4 T-Shirt with Roll Sleeve</a> <br />
+                            <span className='w-full text-[16px]'>$20.00</span>
+                            <section className='flex gap-5 mb-3 mt-10'>
+                                <div className='size-16 border flex flex-col justify-center items-center'><span className='text-black text-base [16px]'>-2374</span>days</div>
+                                <div className='size-16 border flex flex-col justify-center items-center'><span className='text-black text-base [16px]'>-16</span>hrs</div>
+                                <div className='size-16 border flex flex-col justify-center items-center'><span className='text-black text-base [16px]'>-11</span>mints</div>
+                                <div className='size-16 border flex flex-col justify-center items-center'><span className='text-black text-base [16px]'>-10</span>secs</div>
+                            </section>
+                        </div>
+                    </section>
                 </article>
             </div>
-            <article className='w-[60%]'></article>
+
+            <Blogs/>
+            
             <article></article>
         </main>
     );

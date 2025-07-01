@@ -28,7 +28,17 @@ const CaroucelMulti = () => {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        Speed: 2000
+        Speed: 2000,
+        responsive: [
+            {
+                breakpoint: 639,
+                settings: {
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                    vertical: true,
+                }
+            }
+        ]
     };
 
     return (
@@ -37,11 +47,11 @@ const CaroucelMulti = () => {
                 <h2 className='text-3xl font-bold'>FEATURED PRODUCTS</h2>
             </section>
 
-            <section className='slider-container'>
+            <section className='slider-container max-sm:'>
                 <Slider {...settings}>
                     {
                         Product.map((p) =>
-                            <article onMouseEnter={Tvisible} onMouseLeave={Fvisible} className='w-[288px] px-[15px] relative'>
+                            <article onMouseEnter={Tvisible} onMouseLeave={Fvisible} className='w-[288px] px-[15px] relative max-sm:w-[400px]'>
                                 <div className='w-full h-[360px]'><img className='w-full h-full' src={Images[p.img]} alt="" /></div>
 
                                 {/* Motion */}
@@ -50,7 +60,7 @@ const CaroucelMulti = () => {
                                 </div>
 
                                 <div className='w-full h-[70px] text-[#737373]'>
-                                    <a className='w-full text-lg' href="#">{p.name}</a> <br />
+                                    <a className='w-full text-lg hover:text-[#e65540] transition-colors duration-300' href="#">{p.name}</a> <br />
                                     <span className='w-full text-[16px]'>{p.price}</span>
                                 </div>
                             </article>
