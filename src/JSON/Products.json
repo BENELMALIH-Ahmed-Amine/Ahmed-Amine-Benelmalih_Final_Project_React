@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "img": "shop1",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": [],
+            "price": "$17.80",
+            "size": "XL"
+        },
+        {
+            "id": 1,
+            "img": "shop2",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": [],
+            "price": "$15.80",
+            "size": "L" 
+        },
+        {
+            "id": 2,
+            "img": "shop3",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": ["black", "gray", "red"],
+            "price": "$11.80",
+            "size": "XL"
+        },
+        {
+            "id": 3,
+            "img": "shop4",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": [],
+            "price": "$23.80",
+            "size": "M"
+        },
+        {
+            "id": 4,
+            "img": "shop5",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": [],
+            "price": "$20.80",
+            "size": "M"
+        },
+        {
+            "id": 5,
+            "img": "shop6",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": [],
+            "price": "$23.80",
+            "size": "XL"
+        },
+        {
+            "id": 6,
+            "img": "shop7",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": ["gray", "red"],
+            "price": "$23.80",
+            "size": "S"
+        },
+        {
+            "id": 7,
+            "img": "shop8",
+            "name": "Boxy4 T-Shirt with Roll Sleeve",
+            "color": [],
+            "price": "$23.80",
+            "size": "L" 
+        }
+    ]
+}

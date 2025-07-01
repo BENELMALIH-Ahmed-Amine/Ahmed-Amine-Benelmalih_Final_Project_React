@@ -4,6 +4,7 @@ import Nav from './Components/Nav'
 import Footer from './Components/Footer'
 import Home from './Pages/Home/Home.jsx'
 import Header from './Components/Header.jsx'
+// import { MyProvider } from './Context/index.jsx'
 
 function App() {
   return (
@@ -11,15 +12,17 @@ function App() {
       <Header />
       <Nav />
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/shop' element={<Home />} />
-        <Route path='/sale' element={<Home />} />
-        <Route path='/features' element={<Home />} />
-        <Route path='/blog' element={<Home />} />
-        <Route path='/about' element={<Home />} />
-        <Route path='/contact' element={<Home />} />
-      </Routes>
+      {/* <MyProvider> */}
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/shop' element={<Home />} />
+          <Route path='/sale' element={<Home />} />
+          <Route path='/features' element={<Home />} />
+          <Route path='/blog' element={<Home />} />
+          <Route path='/about' element={<Home />} />
+          <Route path='/contact' element={<Home />} />
+        </Routes>
+      {/* </MyProvider> */}
 
       <Footer />
     </>

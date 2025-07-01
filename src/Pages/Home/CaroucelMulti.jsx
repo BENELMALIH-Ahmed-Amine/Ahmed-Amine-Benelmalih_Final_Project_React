@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Images from '../../Constants/Images'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Images from '../../Constants/Images';
-
 import Slider from "react-slick";
-
+import Products from '../../JSON/Products.json'
 
 const CaroucelMulti = () => {
+    const Product = Products.products
+    console.log(Product);
+
+
+    const [visible, setvisiblety] = useState(false)
+    const Tvisible = () => {
+        if (!visible) {
+            setvisiblety("visible")
+        }
+    }
+    const Fvisible = () => {
+        if (visible) {
+            setvisiblety("invisible")
+        }
+    }
+
+
     const settings = {
         dots: true,
         infinite: true,
@@ -21,21 +37,25 @@ const CaroucelMulti = () => {
                 <h2 className='text-3xl font-bold'>FEATURED PRODUCTS</h2>
             </section>
 
-            <section className='bg-amber-100 slider-container'>
+            <section className='slider-container'>
                 <Slider {...settings}>
-                    <article className='w-[288px] px-[15px] bg-amber-600 relative'>
-                        <div className='w-full h-[360px] bg-amber-50'><img src="" alt="" /></div>
+                    {
+                        Product.map((p) =>
+                            <article onMouseEnter={Tvisible} onMouseLeave={Fvisible} className='w-[288px] px-[15px] relative'>
+                                <div className='w-full h-[360px]'><img className='w-full h-full' src={Images[p.img]} alt="" /></div>
 
-                        {/* Motion */}
-                        <div className='w-full h-[360px] bg-[#00000070] absolute top-0'>
-                            <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540]'>SHOP NOW</button>
-                        </div>
+                                {/* Motion */}
+                                <div className={`w-[260px] h-[360px] bg-[#00000080] absolute top-0 invisible ${visible}`}>
+                                    <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540]'>SHOP NOW</button>
+                                </div>
 
-                        <div className='w-full h-[70px] bg-amber-300'>
-                            <a className='w-full text-xl' href="#"></a>
-                            <span className='w-full text-[16px]'></span>
-                        </div>
-                    </article>
+                                <div className='w-full h-[70px] text-[#737373]'>
+                                    <a className='w-full text-lg' href="#">{p.name}</a> <br />
+                                    <span className='w-full text-[16px]'>{p.price}</span>
+                                </div>
+                            </article>
+                        )
+                    }
                 </Slider>
             </section>
         </article>
