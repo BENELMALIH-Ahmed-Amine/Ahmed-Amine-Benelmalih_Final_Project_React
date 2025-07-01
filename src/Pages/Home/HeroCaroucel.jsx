@@ -6,24 +6,24 @@ import Images from '../../Constants/Images';
 import Slider from "react-slick";
 
 const HeroCaroucel = () => {
-
     let sliderRef = useRef(null);
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000
     };
+
     return (
-        //todo: buttons?!
+        // todo: buttons?!
         //? why does h doesn't respend
         
-        <article className='w-[300vw] slider-container'>
+        <article className='w-[100vw] h-[610px] bg-amber-500 slider-container'>
             <Slider ref={slider => (sliderRef = slider)} {...settings}>
-                <section className='w-full h-full relative'>
-                    <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.Carousel1} alt=""/></div>
+                <section className='w-[100vw] h-full relative'>
+                    <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.carousel1} alt=""/></div>
 
                     <div className="w-full h-full bg-[#00000030] grid place-content-center absolute top-0">
                         <div className='flex flex-col items-center'>
@@ -35,8 +35,8 @@ const HeroCaroucel = () => {
                     </div>
                 </section>
 
-                <section className='w-full h-full relative'>
-                    <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.Carousel2} alt=""/></div>
+                <section className='w-[100vw] h-full relative'>
+                    <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.carousel2} alt=""/></div>
 
                     <div className="w-full h-full bg-[#00000030] grid place-content-center absolute top-0">
                         <div className='flex flex-col items-center'>
@@ -48,8 +48,8 @@ const HeroCaroucel = () => {
                     </div>
                 </section>
 
-                <section className='w-full h-full relative'>
-                    <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.Carousel3} alt=""/></div>
+                <section className='w-[100vw] h-full relative'>
+                    <div className='w-[100vw] h-full'><img className='w-full h-full' src={Images.carousel3} alt=""/></div>
 
                     <div className="w-full h-full bg-[#00000030] grid place-content-center absolute top-0">
                         <div className='flex flex-col items-center'>

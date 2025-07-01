@@ -48,7 +48,7 @@ const Footer = () => {
                 </article>
             </section>
 
-            <p className='bg-amber-200'>Copyright © 2022 <a className='text-[14px] text-[#727272]' href="#">Shopify Theme Developed by MassTechnologist</a> All rights reserved.</p>
+            <p>Copyright © 2022 <a className='text-[14px] text-[#727272]' href="#">Shopify Theme Developed by MassTechnologist</a> All rights reserved.</p>
         </footer>
     );
 };
