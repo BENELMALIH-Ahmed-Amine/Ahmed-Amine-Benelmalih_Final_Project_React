@@ -7,7 +7,7 @@ import Products from '../../JSON/Products.json'
 
 const CaroucelMulti = () => {
     const Product = Products.products
-    console.log(Product);
+    // console.log(Product);
 
 
     const [visible, setvisiblety] = useState(false)
@@ -55,7 +55,7 @@ const CaroucelMulti = () => {
                                 <div className='w-full h-[360px]'><img className='w-full h-full' src={Images[p.img]} alt="" /></div>
 
                                 {/* Motion */}
-                                <div className={`w-[260px] h-[360px] bg-[#00000080] absolute top-0 invisible ${visible}`}>
+                                <div className={`w-[260px] h-[360px] bg-[#00000080] absolute top-0 invisible ${visible} max-sm:w-full`}>
                                     <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540]'>SHOP NOW</button>
                                 </div>
 

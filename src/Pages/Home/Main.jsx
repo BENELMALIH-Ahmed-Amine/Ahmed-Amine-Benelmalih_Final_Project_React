@@ -1,8 +1,7 @@
 import React from 'react';
 import CaroucelMulti from './CaroucelMulti';
 import Images from '../../Constants/Images';
-import { Link } from 'react-router-dom';
-import Blogs from '../Blog/Blogs';
+import BlogS from '../Blog/BlogS';
 
 const Main = () => {
     return (
@@ -71,9 +70,26 @@ const Main = () => {
                 </article>
             </div>
 
-            <Blogs/>
+            <BlogS/>
             
-            <article></article>
+            <section className='w-full pt-5 pb-13 text-3xl text-[#222222] font-bold grid place-content-center'>
+                <h3>@ FOLLOW US ON INSTAGRAM</h3>
+                </section>
+
+            <section className='w-full pt-15.5 pb-10 px-4 flex items-center text-[#888888]'>
+                <div className='w-full py-4 flex flex-col items-center gap-1.5'>
+                    <h4 className='text-lg font-semibold'>Free Delivery Worldwide</h4>
+                    <span className='italic text-sm'>Mirum est notare quam littera gothica</span>
+                </div>
+                <div className='w-full py-4 flex flex-col items-center gap-1.5'>
+                    <h4 className='text-lg font-semibold'>30 Days Return</h4>
+                    <span className='italic text-sm'>Mirum est notare quam littera gothica</span>
+                </div>
+                <div className='w-full py-4 flex flex-col items-center gap-1.5'>
+                    <h4 className='text-lg font-semibold'>Store Opening </h4>
+                    <span className='italic text-sm'>Mirum est notare quam littera gothica</span>
+                </div>
+            </section>
         </main>
     );
 };

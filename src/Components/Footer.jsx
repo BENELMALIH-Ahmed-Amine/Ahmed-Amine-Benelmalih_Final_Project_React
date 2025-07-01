@@ -3,7 +3,7 @@ import Sosials from './Sosials';
 
 const Footer = () => {
     return (
-        <footer className='w-full pb-11 pt-15 bg-[#f0f0f0] flex flex-col items-center text-[#737373] text-[14px]'>
+        <footer className='w-full pb-11 pt-15 mt-5 bg-[#f0f0f0] flex flex-col items-center text-[#737373] text-[14px]'>
             <section className=' w-full pb-38 px-13 space-x-37 min-sm:flex'>
                 <article className='w-[470px] flex flex-col gap-10'>
                     <h4 className='text-black text-sm font-extrabold'>GET IN THOUCH</h4>
