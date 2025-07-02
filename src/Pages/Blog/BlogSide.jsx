@@ -9,7 +9,7 @@ const BlogSide = () => {
     const SideProducts = []
 
     for (let i = 0; i < 5; i++) {
-        let RandNum = Math.floor(Math.random() * ids.length)
+        let RandNum = Math.floor(Math.random() * 7)
         console.log(RandNum);
         
         let ProductShow = Product.find(e => e.id == RandNum)
@@ -23,6 +23,24 @@ const BlogSide = () => {
         
     }
     console.log(SideProducts);
+
+    
+    // أفضل ولكن به مشكل ما
+
+    // for (let i = 0; 1 == 1; i++) {
+    //     let RandNum = Math.floor(Math.random() * 7)
+
+    //     let ProductShow = Product.find(e => e.id == RandNum)
+
+    //     if (!SideProducts.includes(ProductShow)) {
+    //         SideProducts.push(ProductShow)
+    //     }
+
+    //     if (SideProducts.length == 5) {
+    //         return
+    //     }
+    // }
+    // console.log(SideProducts);
 
     return (
         <section className='w-[270px] flex flex-col gap-15 text-[#888888]'>

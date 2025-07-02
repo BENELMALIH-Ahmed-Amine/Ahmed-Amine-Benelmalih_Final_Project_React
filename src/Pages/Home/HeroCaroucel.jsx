@@ -4,8 +4,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Images from '../../Constants/Images';
 
 import Slider from "react-slick";
+import { useNavigate } from 'react-router-dom';
 
 const HeroCaroucel = () => {
+    const collections = useNavigate()
+
     let sliderRef = useRef(null);
     const settings = {
         dots: true,
@@ -30,7 +33,7 @@ const HeroCaroucel = () => {
                             <h1 className='text-xl text-white'>Women Collection 2018</h1>
                             <span className='text-[65px] text-white font-bold'>New arrivals</span>
 
-                            <button className='px-10 py-2.5 bg-white rounded-4xl hover:text-white hover:bg-[#e65540]'>SHOP NOW</button>
+                            <button onClick={() => collections('collections')} className='px-10 py-2.5 bg-white rounded-4xl hover:text-white hover:bg-[#e65540]'>SHOP NOW</button>
                         </div>
                     </div>
                 </section>
@@ -43,7 +46,7 @@ const HeroCaroucel = () => {
                             <h1 className='text-xl text-white'>Women Collection 2018</h1>
                             <span className='text-[65px] text-white font-bold'>New arrivals</span>
 
-                            <button className='px-10 py-2.5 bg-white rounded-4xl hover:text-white hover:bg-[#e65540]'>SHOP NOW</button>
+                            <button onClick={() => collections('collections')} className='px-10 py-2.5 bg-white rounded-4xl hover:text-white hover:bg-[#e65540]'>SHOP NOW</button>
                         </div>
                     </div>
                 </section>
@@ -56,7 +59,7 @@ const HeroCaroucel = () => {
                             <h1 className='text-xl text-white'>Women Collection 2018</h1>
                             <span className='text-[65px] text-white font-bold'>New arrivals</span>
 
-                            <button className='px-10 py-2.5 bg-white rounded-4xl hover:text-white hover:bg-[#e65540]'>SHOP NOW</button>
+                            <button onClick={() => collections('collections')} className='px-10 py-2.5 bg-white rounded-4xl hover:text-white hover:bg-[#e65540]'>SHOP NOW</button>
                         </div>
                     </div>
                 </section>

@@ -8,21 +8,21 @@ const Shop = () => {
     // console.log(Product);
 
 
-    const [visible, setvisiblety] = useState(false)
-    const Tvisible = () => {
-        if (!visible) {
-            setvisiblety("visible")
+    const [visible, setvisiblety] = useState("invisible")
+        const Tvisible = () => {
+            if (visible == "invisible") {
+                setvisiblety("visible")
+            }
         }
-    }
-    const Fvisible = () => {
-        if (visible) {
-            setvisiblety("invisible")
+        const Fvisible = () => {
+            if (visible) {
+                setvisiblety("invisible")
+            }
         }
-    }
     return (
         <main className='w-full flex flex-col items-center'>
             <div className='w-full relative'>
-                <img className='w-full h-full' src={Images.banner3} alt="" />
+                <img className='w-full h-full' src={Images.banner1} alt="" />
                 <div className='w-full h-full bg-[#00000020] flex justify-center items-center text-white text-6xl font-bold uppercase absolute top-0'>Products</div>
             </div>
             <article className='w-3/5 pt-16.5 pb-9.5 flex gap-7.5 text-[#888888] max-sm:w-[80%] max-sm:flex-col-reverse'>

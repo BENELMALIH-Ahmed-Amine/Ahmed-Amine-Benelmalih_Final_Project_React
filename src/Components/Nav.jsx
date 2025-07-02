@@ -5,6 +5,7 @@ import { IoLockClosedOutline } from 'react-icons/io5';
 import { FaBars } from 'react-icons/fa';
 import { CgChevronRight } from 'react-icons/cg';
 import { FaX } from 'react-icons/fa6';
+import { PiUserCircle } from 'react-icons/pi';
 
 const Nav = () => {
     const [visible, setvisiblety] = useState("invisible")
@@ -43,11 +44,11 @@ const Nav = () => {
                 <Link to={'/about'} className='w-fit hover:underline max-sm:py-3'>About</Link>
                 <Link to={'/contact'} className='w-fit hover:underline max-sm:py-3'>Contact</Link>
             </nav>
-            <div className='flex gap-x-10 text-3xl relative max-sm:gap-x-7'>
-                <IoLockClosedOutline />
+            <div className='flex items-center gap-x-10 text-3xl relative max-sm:gap-x-7'>
+                <PiUserCircle className='text-4xl'/>
 
                 <IoLockClosedOutline onClick={visiblety} />
-                <div className={`w-[350px] px-12 py-5 text-lg absolute top-14 -right-3 ${visible}`}>
+                <div className={`w-[350px] bg-white px-12 py-5 border text-lg absolute top-13 right-0 z-10 ${visible}`}>
                     Your shopping cart is empty!
                 </div>
 

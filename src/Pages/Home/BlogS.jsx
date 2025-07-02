@@ -18,7 +18,7 @@ const BlogS = () => {
                     Blogs.map((b) =>
                         <Link to={`/blog/${b.id}`}>
                             <article className='w-full h-[455px] px-4 pb-8 text-[#888888]'>
-                                <div className='w-full h-[275px] bg-amber-50'><img className='w-full h-full' src={Images[b.img]} alt="" /></div>
+                                <div className='w-full h-[275px] bg-amber-50'><img className='w-full h-full hover:scale-105' src={Images[b.img]} alt="" /></div>
                                 <div className='pt-3.5 space-y-3'>
                                     <Link to={`/blog/${b.id}`} className='w-full text-lg font-semibold text-[#333333] hover:text-[#e65540] transition-colors duration-300'>
                                         <h4>{b.title}</h4>

@@ -10,9 +10,9 @@ const CaroucelMulti = () => {
     // console.log(Product);
 
 
-    const [visible, setvisiblety] = useState(false)
+    const [visible, setvisiblety] = useState("invisible")
     const Tvisible = () => {
-        if (!visible) {
+        if (visible == "invisible") {
             setvisiblety("visible")
         }
     }
@@ -55,8 +55,8 @@ const CaroucelMulti = () => {
                                 <div className='w-full h-[360px]'><img className='w-full h-full' src={Images[p.img]} alt="" /></div>
 
                                 {/* Motion */}
-                                <div className={`w-[260px] h-[360px] bg-[#00000080] absolute top-0 invisible ${visible} max-sm:w-full`}>
-                                    <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540]'>SHOP NOW</button>
+                                <div className={`w-[260px] h-[360px] bg-[#00000080] absolute top-0 invisible ${visible} max-sm:w-[92%]`}>
+                                    <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540] absolute bottom-5 left-[55px] max-sm:left-[95px]'>SHOP NOW</button>
                                 </div>
 
                                 <div className='w-full h-[70px] mt-3 text-[#737373]'>
