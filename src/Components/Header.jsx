@@ -10,8 +10,8 @@ const Header = () => {
                 <p className='max-sm:invisible'>fashe@example.com</p>
                 <div>
                     <label htmlFor="cars"></label>
-                    <select id='cars'>
-                        <option value="USD" selected>USD</option>
+                    <select id='cars' value={`USD`}>
+                        <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
                         <option value="GPB">GPB</option>
                         <option value="PKR">PKR</option>

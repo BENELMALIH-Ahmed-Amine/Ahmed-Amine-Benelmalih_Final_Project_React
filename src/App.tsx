@@ -1,14 +1,16 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Nav from './Components/Nav'
-import Footer from './Components/Footer'
-import Home from './Pages/Home/Home.jsx'
 import Header from './Components/Header.jsx'
+import Nav from './Components/Nav'
+import Home from './Pages/Home/Home.jsx'
+import Shop from './Pages/Shop/Shop.jsx'
+import Sale from './Pages/Sale.jsx'
+import Features from './Pages/Features.jsx'
 // import Blog from './Pages/Blog/Blog.jsx'
 import BlogAr from './Pages/Blog/BlogAr.jsx'
 import About from './Pages/About.jsx'
-import Features from './Pages/Features.jsx'
 import Contact from './Pages/Contact.jsx'
+import Footer from './Components/Footer'
 // import { MyProvider } from './Context/index.jsx'
 
 function App() {
@@ -20,8 +22,8 @@ function App() {
       {/* <MyProvider> */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/shop' element={<Home />} />
-          <Route path='/sale' element={<Home />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/sale' element={<Sale />} />
           <Route path='/features' element={<Features/>} />
           {/* <Route path='/blog' element={<Blog />} /> */}
           <Route path='/blog/:id' element={<BlogAr />} />

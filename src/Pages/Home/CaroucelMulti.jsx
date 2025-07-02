@@ -50,8 +50,8 @@ const CaroucelMulti = () => {
             <section className='slider-container max-sm:'>
                 <Slider {...settings}>
                     {
-                        Product.map((p) =>
-                            <article onMouseEnter={Tvisible} onMouseLeave={Fvisible} className='w-[288px] px-[15px] relative max-sm:w-[400px]'>
+                        Product.map((p, i) =>
+                            <article key={i} onMouseEnter={Tvisible} onMouseLeave={Fvisible} className='w-[288px] px-[15px] relative max-sm:w-[400px]'>
                                 <div className='w-full h-[360px]'><img className='w-full h-full' src={Images[p.img]} alt="" /></div>
 
                                 {/* Motion */}
@@ -59,7 +59,7 @@ const CaroucelMulti = () => {
                                     <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540]'>SHOP NOW</button>
                                 </div>
 
-                                <div className='w-full h-[70px] text-[#737373]'>
+                                <div className='w-full h-[70px] mt-3 text-[#737373]'>
                                     <a className='w-full text-lg hover:text-[#e65540] transition-colors duration-300' href="#">{p.name}</a> <br />
                                     <span className='w-full text-[16px]'>{p.price}</span>
                                 </div>

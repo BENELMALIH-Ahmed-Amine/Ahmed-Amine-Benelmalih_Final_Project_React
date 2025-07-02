@@ -11,7 +11,8 @@ import card4 from '../assets/images/cards5.webp'
 import card5 from '../assets/images/cards3.webp'
 import card6 from '../assets/images/cards6.webp'
 
-// main 3th section (Carousel2)
+// Shop
+import banner3 from '../assets/images/banner-shop.webp'
 import shop1 from '../assets/images/shopy1.jpg'
 import shop2 from '../assets/images/shopy2.webp'
 import shop3 from '../assets/images/shopy3.webp'
@@ -25,7 +26,7 @@ import shop8 from '../assets/images/shopy8.webp'
 import banner1 from '../assets/images/banner1.jpg'
 import banner2 from '../assets/images/banner2.jpg'
 
-// main 5th blog
+// Blog
 import blog1 from '../assets/images/blog-01.jpg'
 import blog2 from '../assets/images/blog-02.jpg'
 import blog3 from '../assets/images/blog-03.jpg'
@@ -34,4 +35,4 @@ import blog3 from '../assets/images/blog-03.jpg'
 import about1 from '../assets/images/banner-about.png'
 
 
-export default { carousel1, carousel2, carousel3, card1, card2, card3, card4, card5, card6, shop1, shop2, shop3, shop4, shop5, shop6, shop7, shop8, banner1, banner2, blog1, blog2, blog3, about1 }
+export default { carousel1, carousel2, carousel3, banner3, card1, card2, card3, card4, card5, card6, shop1, shop2, shop3, shop4, shop5, shop6, shop7, shop8, banner1, banner2, blog1, blog2, blog3, about1 }
