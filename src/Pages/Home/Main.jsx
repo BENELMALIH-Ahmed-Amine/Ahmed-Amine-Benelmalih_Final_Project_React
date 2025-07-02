@@ -74,21 +74,21 @@ const Main = () => {
 
             <BlogS />
 
-            <section className='w-full pt-5 pb-13 text-3xl text-[#222222] font-bold grid place-content-center'>
+            <section className='w-full pt-5 pb-13 text-[32px] text-[#222222] font-bold grid place-content-center'>
                 <h3>@ FOLLOW US ON INSTAGRAM</h3>
             </section>
 
-            <section className='w-full pt-15.5 pb-10 px-4 flex items-center text-[#888888]'>
-                <div className='w-full py-4 flex flex-col items-center gap-1.5'>
-                    <h4 className='text-lg font-semibold'>Free Delivery Worldwide</h4>
+            <section className='w-full pt-15.5 pb-10 px-4 flex items-center text-[#999]'>
+                <div className='w-full py-4 flex flex-col items-center gap-0.5'>
+                    <h4 className='text-lg font-medium'>Free Delivery Worldwide</h4>
                     <span className='italic text-sm'>Mirum est notare quam littera gothica</span>
                 </div>
-                <div className='w-full py-4 flex flex-col items-center gap-1.5'>
-                    <h4 className='text-lg font-semibold'>30 Days Return</h4>
+                <div className='w-full py-4 flex flex-col items-center gap-0.5'>
+                    <h4 className='text-lg font-medium'>30 Days Return</h4>
                     <span className='italic text-sm'>Mirum est notare quam littera gothica</span>
                 </div>
-                <div className='w-full py-4 flex flex-col items-center gap-1.5'>
-                    <h4 className='text-lg font-semibold'>Store Opening </h4>
+                <div className='w-full py-4 flex flex-col items-center gap-0.5'>
+                    <h4 className='text-lg font-medium'>Store Opening </h4>
                     <span className='italic text-sm'>Mirum est notare quam littera gothica</span>
                 </div>
             </section>

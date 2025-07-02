@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './Components/Header.jsx'
 import Nav from './Components/Nav'
+// import { MyProvider } from './Context/index.jsx'
 import Home from './Pages/Home/Home.jsx'
 import Shop from './Pages/Shop/Shop.jsx'
 import Sale from './Pages/Sale.jsx'
@@ -13,7 +14,7 @@ import Contact from './Pages/Contact.jsx'
 import Footer from './Components/Footer'
 import Collections from './Pages/Collections.jsx'
 import NotFound from './Pages/NotFound.jsx'
-// import { MyProvider } from './Context/index.jsx'
+import BackTT from './Components/BackTT.jsx'
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       {/* </MyProvider> */}
 
       <Footer />
+      <BackTT/>
     </>
   )
 }

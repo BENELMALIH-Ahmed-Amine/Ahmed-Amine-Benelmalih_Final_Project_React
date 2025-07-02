@@ -41,14 +41,14 @@ const Footer = () => {
                     </article>
                 </section>
 
-                <article className='space-y-10 flex flex-col'>
-                    <h4 className='text-black text-sm font-extrabold'>NEWSLETTER</h4>
-                    <input type="text"  placeholder='Email Address' className='w-[300px] pb-1 border-b-1 border-b-[#888888] focus:border-b-[#e65540]'/>
+                <article className='flex flex-col'>
+                    <h4 className='text-black text-sm font-extrabold mb-10'>NEWSLETTER</h4>
+                    <input type="text"  placeholder='Email Address' className='w-[300px] pb-1 border-b-1 border-b-[#888888] focus:border-b-[#e65540] mb-5'/>
                     <button className='w-fit px-10 py-3 bg-black rounded-4xl text-white hover:bg-[#e65540] transition-colors duration-300 uppercase'>Shop now</button>
                 </article>
             </section>
 
-            <p>Copyright © 2022 <a className='text-[14px] text-[#727272]' href="#">Shopify Theme Developed by MassTechnologist</a> All rights reserved.</p>
+            <p className='text-[13px]'>Copyright © 2022 <a className='text-[14px] text-[#727272]' href="#">Shopify Theme Developed by MassTechnologist</a> All rights reserved.</p>
         </footer>
     );
 };

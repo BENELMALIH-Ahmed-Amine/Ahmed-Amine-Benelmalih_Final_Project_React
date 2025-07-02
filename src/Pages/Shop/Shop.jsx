@@ -66,7 +66,7 @@ const Shop = () => {
 
                                     {/* motion */}
                                     <div className={`w-[260px] h-[360px] bg-[#00000080] absolute top-0 invisible ${visible} max-sm:w-full`}>
-                                        <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540]'>SHOP NOW</button>
+                                        <button className='px-10 py-2.5 text-white bg-black rounded-4xl hover:bg-[#e65540] uppercase absolute bottom-5 left-[37] max-sm:left-[80px]'>Add to chart</button>
                                     </div>
 
                                     <div className='w-full h-[70px] mt-3 text-[#737373]'>
