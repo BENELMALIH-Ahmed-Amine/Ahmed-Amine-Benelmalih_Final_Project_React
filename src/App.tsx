@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home.jsx'
 import Header from './Components/Header.jsx'
 // import Blog from './Pages/Blog/Blog.jsx'
 import BlogAr from './Pages/Blog/BlogAr.jsx'
+import About from './Pages/About.jsx'
 // import { MyProvider } from './Context/index.jsx'
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <Route path='/features' element={<Home />} />
           {/* <Route path='/blog' element={<Blog />} /> */}
           <Route path='/blog/:id' element={<BlogAr />} />
-          <Route path='/about' element={<Home />} />
+          <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Home />} />
         </Routes>
       {/* </MyProvider> */}

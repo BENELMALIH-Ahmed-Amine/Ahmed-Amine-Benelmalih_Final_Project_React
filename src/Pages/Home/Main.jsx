@@ -1,7 +1,7 @@
 import React from 'react';
 import CaroucelMulti from './CaroucelMulti';
 import Images from '../../Constants/Images';
-import BlogS from '../Blog/BlogS';
+import BlogS from './BlogS';
 
 const Main = () => {
     return (
