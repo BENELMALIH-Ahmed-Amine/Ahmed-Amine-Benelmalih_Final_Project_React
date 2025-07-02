@@ -8,8 +8,9 @@ const About = () => {
                 <img className='w-full h-full' src={Images.about1} alt="" />
                 <div className='w-full h-full bg-[#00000020] flex justify-center items-center text-white text-6xl font-bold uppercase absolute top-0'>About</div>
             </div>
-            <article className='w-[60%] pt-16.5 pb-9.5 flex gap-7.5 max-sm:flex-col'>
-                <section className='w-[360px] h-[440px] '><img className='w-full h-full' src={Images.shop4} alt="" /></section>
+            <article className='w-3/5 pt-16.5 pb-9.5 flex gap-7.5 max-sm:flex-col'>
+                <section className='w-[360px] h-[440px]'><img className='w-full h-full' src={Images.shop4} alt="" /></section>
+
                 <section className='w-[730px] text-[15.5px] flex flex-col justify-center gap-8 text-[#888888] leading-6.5 max-sm:w-full'>
                     <div className='flex flex-col justify-center gap-5'>
                         <h2 className='text-2xl text-[#333333] '>Our story</h2>

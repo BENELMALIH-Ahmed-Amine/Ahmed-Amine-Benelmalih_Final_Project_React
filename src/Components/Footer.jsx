@@ -44,7 +44,7 @@ const Footer = () => {
                 <article className='space-y-10 flex flex-col'>
                     <h4 className='text-black text-sm font-extrabold'>NEWSLETTER</h4>
                     <input type="text"  placeholder='Email Address' className='w-[300px] pb-1 border-b-1 border-b-[#888888] focus:border-b-[#e65540]'/>
-                    <button className='w-fit px-10 py-3 bg-black rounded-4xl text-white hover:bg-[#e65540]'>SHOP NOW</button>
+                    <button className='w-fit px-10 py-3 bg-black rounded-4xl text-white hover:bg-[#e65540] transition-colors duration-300 uppercase'>Shop now</button>
                 </article>
             </section>
 
