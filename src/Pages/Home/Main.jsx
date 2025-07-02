@@ -70,11 +70,11 @@ const Main = () => {
                 </article>
             </div>
 
-            <BlogS/>
-            
+            <BlogS />
+
             <section className='w-full pt-5 pb-13 text-3xl text-[#222222] font-bold grid place-content-center'>
                 <h3>@ FOLLOW US ON INSTAGRAM</h3>
-                </section>
+            </section>
 
             <section className='w-full pt-15.5 pb-10 px-4 flex items-center text-[#888888]'>
                 <div className='w-full py-4 flex flex-col items-center gap-1.5'>
